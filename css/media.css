@@ -1234,13 +1234,16 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .footer__content,
+    
     .show-mobile,
     .phone-mobile,
     .sandwich,
     .menu-overlay,
     .footer__title i {
         display: none !important;
+    }
+    .footer__content {
+        display: block !important;
     }
 }
 
