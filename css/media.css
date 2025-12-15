@@ -268,6 +268,162 @@
     .header.nav-up {
         transform: translateY(-150px);
     }
+    .item-subcategory__image {
+        width: 145px;
+        height: 145px;
+    }
+    .item-subcategory__title {
+        margin-bottom: 4px;
+    }
+    .item-subcategory__count {
+        font-size: 12px;
+    }
+    .sidebar-catalog__total {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .item-sidebar__list {
+        padding-left: 25px;
+    }
+    .range-controls input {
+        height: 47px;
+        font-size: 13px;
+        padding-left: 31px;
+    }
+    .range-controls__descr {
+        font-size: 13px;
+        padding: 0 13px;
+    }
+    .checkbox.checkbox--main label input {
+        width: 21px;
+        height: 21px;
+    }
+    .checkbox.checkbox--main label input::before {
+        font-size: 13px;
+    }
+    .pager {
+        gap: 20px;
+    }
+    .billbord-page__title {
+        font-size: 32px;
+        padding: 21px 30px;
+        max-width: 530px;
+    }
+    .billbord-page__descr {
+        font-size: 28px;
+        max-width: 302px;
+        margin-left: 304px;
+        margin-top: -61px;
+        padding: 9px 27px;
+    }
+    .billbord-page {
+        padding-top: 80px;
+        padding-bottom: 98px;
+    }
+    .numbers__item {
+        font-size: 15px;
+    }
+    .numbers__value {
+        font-size: 43px;
+        margin-bottom: 8px;
+    }
+    .row.row--numbers>div {
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    .row.row--numbers {
+        margin: 0 -30px;
+        margin-bottom: -30px;
+    }
+    .item-news__content {
+        padding: 15px;
+        padding-bottom: 0;
+    }
+    .item-news__date {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .item-news__title {
+        font-size: 18px;
+    }
+    .article-content h2 {
+        font-size: 17px;
+        margin-top: 28px;
+    }
+    .text-info {
+        padding: 26px 25px;
+        margin: 30px 0;
+    }
+    .page-article {
+        padding-bottom: 85px;
+    }
+    .consultation--page .consultation__title {
+        max-width: 564px;
+    }
+    .article-content small {
+        font-size: 12px;
+    }
+    .billbord-page--legal .billbord-page__title {
+        max-width: 590px;
+    }
+    .billbord-page__content ul {
+        font-size: 18px;
+        padding-left: 24px;
+    }
+    .billbord-page__content {
+        padding: 23px 32px;
+    }
+    .advantages__title {
+        font-size: 18px;
+    }
+    .advantages--secondary .advantages__item {
+        font-size: 16px;
+        padding: 20px 30px;
+        max-width: 300px;
+    }
+    .advantages--secondary .advantages__grid {
+        gap: 65px;
+    }
+    .numbers--conditions .head-section {
+        margin-bottom: 55px;
+    }
+    .steps__content {
+        font-size: 16px;
+        padding: 21px 30px;
+        max-width: 333px;
+    }
+    .steps__title {
+        font-size: 18px;
+    }
+    .steps__count {
+        width: 66px;
+        height: 58px;
+        font-size: 28px;
+    }
+    .steps__item:nth-child(4) .steps__content::before, .steps__content::after {
+        margin-left: 70px;
+    }
+    .steps__item:nth-child(4) .steps__content::before {
+        margin-right: 70px;
+    }
+    .steps__item:nth-child(4) .steps__content::after {
+        margin-left: 49px;
+    }
+    .consultation--secondary .consultation__title {
+        max-width: 522px;
+        padding-left: 35px;
+    }
+    .consultation--secondary .consultation__form {
+        max-width: 597px;
+        padding-top: 20px;
+    }
+    .consultation--secondary .consultation__main::before {
+        left: 398px;
+        width: 340px;
+    }
+    .steps__title {
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width : 1450px) {
     body {
@@ -541,6 +697,143 @@
     .header.nav-up {
         transform: translateY(-130px);
     }
+    .item-sidebar__list li a {
+        font-size: 12px;
+    }
+    .item-sidebar__list {
+        padding-left: 15px;
+    }
+    .range-controls input {
+        height: 44px;
+        font-size: 12px;
+        padding-left: 28px;
+    }
+    .range-controls__descr {
+        font-size: 12px;
+        padding: 0 11px;
+    }
+    .item-sidebar--border .item-sidebar__content {
+        padding-bottom: 20px;
+    }
+    .sidebar-catalog__total {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .item-sidebar__head {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        gap: 11px;
+    }
+    .item-subcategory__image {
+        width: 135px;
+        height: 135px;
+    }
+    .billbord-page__title {
+        font-size: 29px;
+        padding: 19px 27px;
+        max-width: 505px;
+    }
+    .billbord-page__descr {
+        font-size: 25px;
+        max-width: 289px;
+        margin-left: 290px;
+        margin-top: -56px;
+        padding: 9px 25px;
+    }
+    .billbord-page {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+    .numbers__value {
+        font-size: 36px;
+    }
+    .numbers__item {
+        font-size: 13px;
+    }
+    .row.row--numbers>div {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .row.row--numbers {
+        margin: 0 -20px;
+        margin-bottom: -20px;
+    }
+    .item-news__title {
+        font-size: 15px;
+    }
+    .consultation--page .consultation__title {
+        max-width: 405px;
+    }
+    .page-article {
+        padding-bottom: 60px;
+    }
+    .text-info {
+        padding: 20px 20px;
+        margin: 24px 0;
+    }
+    .article-content h2 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .article-content small {
+        font-size: 10px;
+    }
+    .breadcrumbs {
+        font-size: 12px;
+    }
+    .billbord-page--legal .billbord-page__title {
+        max-width: 520px;
+    }
+    .billbord-page__buttons {
+        padding-top: 20px;
+    }
+    .billbord-page__content ul {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    .billbord-page.billbord-page--legal {
+        padding-top: 32px;
+        padding-bottom: 28px;
+    }
+    .advantages--secondary .advantages__item {
+        font-size: 14px;
+        padding: 17px 25px;
+        max-width: 285px;
+    }
+    .advantages--secondary .advantages__grid {
+        gap: 37px;
+    }
+    .steps__wrapper {
+        gap: 38px 80px;
+    }
+    .steps__content {
+        font-size: 14px;
+        padding: 19px 25px;
+        max-width: 298px;
+    }
+    .steps__item:nth-child(4) .steps__content::before, .steps__content::after {
+        margin-left: 42px;
+    }
+    .steps__item:nth-child(4) .steps__content::before {
+        margin-right: 42px;
+    }
+    .steps__item:nth-child(4) .steps__content::after {
+        margin-left: 22px;
+    }
+    .consultation--secondary .consultation__title {
+        max-width: 432px;
+        padding-left: 30px;
+    }
+    .consultation--secondary .consultation__form {
+        max-width: 475px;
+    }
+    .consultation--secondary .consultation__main::before {
+        left: 328px;
+        width: 313px;
+    }
+    .advantages__title {
+        font-size: 16px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -813,6 +1106,94 @@
     }
     .header.nav-up {
         transform: translateY(-110px);
+    }
+    .item-sidebar__list li a {
+        font-size: 10px;
+    }
+    .checkbox.checkbox--main label input {
+        width: 17px;
+        height: 17px;
+    }
+    .checkbox.checkbox--main label input::before {
+        font-size: 10px;
+    }
+    .row.row--numbers>div {
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+    .row.row--numbers {
+        margin: 0 -10px;
+        margin-bottom: -10px;
+    }
+    .numbers__value {
+        font-size: 30px;
+    }
+    .row>div {
+        padding: 0 8px;
+    }
+    .row {
+        margin: 0 -8px;
+    }
+    .row.row--main>div {
+        margin-bottom: 16px;
+    }
+    .row.row--main {
+        margin-bottom: -16px;
+    }
+    .billbord-page__content {
+        padding: 9px 20px;
+    }
+    .billbord-page.billbord-page--legal {
+        padding-top: 26px;
+        padding-bottom: 18px;
+    }
+    .billbord-page.billbord-page--legal {
+        background-position: center right -200px;
+    }
+    .billbord-page__content ul {
+        font-size: 14px;
+    }
+    .advantages--secondary .advantages__item {
+        font-size: 12px;
+        padding: 15px;
+    }
+    .advantages__title {
+        font-size: 14px;
+    }
+    .advantages--secondary .advantages__grid {
+        gap: 25px;
+    }
+    .categories-main {
+        padding-bottom: 60px;
+    }
+    .steps__content {
+        font-size: 12px;
+        padding: 15px 20px;
+        max-width: 245px;
+    }
+    .steps__wrapper {
+        gap: 35px 55px;
+    }
+    .steps__item:nth-child(4) .steps__content::before, .steps__content::after {
+        margin-left: 23px;
+    }
+    .steps__item:nth-child(4) .steps__content::before {
+        margin-right: 23px;
+    }
+    .steps__item:nth-child(4) .steps__content::after {
+        margin-left: 10px;
+    }
+    .steps__count {
+        width: 60px;
+        height: 55px;
+        font-size: 24px;
+    }
+    .consultation--secondary .consultation__title {
+        max-width: 345px;
+        padding-left: 23px;
+    }
+    .consultation--secondary .consultation__main::before {
+        left: 210px;
     }
 }
 
@@ -1229,12 +1610,217 @@
         margin: 15px 0;
         flex-wrap: wrap;
     }
+    .page-catalog .slider-categories {
+        margin-bottom: 25px;
+    }
+    .item-sidebar__list li a {
+        font-size: 13px;
+    }
+    .sidebar-catalog {
+        padding-top: 20px;
+        margin: 0;
+        display: none;
+    }
+    .content-catalog {
+        padding-top: 10px;
+        margin: 0;
+    }
+    .checkbox.checkbox--main label input::before {
+        font-size: 15px;
+    }
+    .checkbox.checkbox--main label input {
+        width: 24px;
+        height: 24px;
+    }
+    .range-controls input {
+        height: 50px;
+        font-size: 14px;
+        padding-left: 32px;
+    }
+    .range-controls__descr {
+        font-size: 14px;
+        padding: 0 13px;
+    }
+    .head-section__value {
+        margin-top: 15px;
+    }
+    .pager {
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .page-numbers {
+        width: 30px;
+        height: 30px;
+    }
+    .page-catalog {
+        padding-bottom: 50px;
+    }
+    .btn-main_filter {
+        height: 45px;
+        margin-bottom: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .billbord-page__title {
+        font-size: 22px;
+        padding: 15px 18px;
+        max-width: 275px;
+    }
+    .billbord-page__descr {
+        font-size: 17px;
+        max-width: 236px;
+        margin-left: 65px;
+        margin-top: -10px;
+        padding: 9px 15px;
+    }
+    .billbord-page {
+        background-position: center right -450px;
+    }
+    .numbers img, .article-content img {
+        margin: 15px 0;
+    }
+    .row.row--numbers {
+        padding-bottom: 15px;
+    }
+    .advantages--about .advantages__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sertificats .row.row--main>div {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .sertificats .row.row--main {
+        margin: 0 -5px;
+        margin-bottom: -10px;
+    }
+    .sertificats {
+        padding-bottom: 50px;
+    }
+    .numbers .head-section {
+        padding-top: 20px;
+    }
+    .item-news__date {
+        font-size: 13px;
+    }
+    .row.row--main>div {
+        margin-bottom: 22px;
+    }
+    .row.row--main {
+        margin-bottom: -22px;
+    }
+    .page-news {
+        padding-bottom: 50px;
+    }
+    .breadcrumbs {
+        font-size: 14px;
+        display: block;
+    }
+    .breadcrumbs li {
+        display: inline;
+    }
+    .article-content small {
+        font-size: 13px;
+    }
+    .article-content h2 {
+        font-size: 17px;
+    }
+    .page-article {
+        padding-bottom: 10px;
+    }
+    .consultation--page {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .consultation--page .consultation__main {
+        background: #d7b56d;
+    }
+    .consultation--page .consultation__subtitle {
+        margin-left: 15px;
+    }
+    .consultation--page .consultation__title {
+        max-width: 320px;
+        padding-left: 25px;
+    }
+    .billbord-page__buttons {
+        display: block;
+    }
+    .billbord-page__buttons .btn-main {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .billbord-page.billbord-page--legal {
+        background-position: center right -450px;
+        background-image: none;
+    }
+    .billbord-page--legal .billbord-page__title {
+        max-width: 319px;
+    }
+    .advantages--secondary .advantages__item {
+        font-size: 13px;
+        flex-grow: initial;
+    }
+    .advantages--secondary .advantages__grid {
+        gap: 10px;
+        display: grid;
+    }
+    .numbers--conditions .head-section {
+        margin-bottom: 25px;
+    }
+    .numbers__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .numbers.numbers--conditions {
+        padding-bottom: 50px;
+    }
+    .categories-main .grid-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .steps__wrapper {
+        display: block;
+    }
+    .steps__content {
+        max-width: 100%;
+    }
+    .steps__item {
+        padding-right: 50px;
+        margin: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    .steps__item:last-child {
+        margin-bottom: 0 !important;
+    }
+    .steps__content::after {
+        display: block !important;
+        margin-left: 10px;
+        transform: rotate(90deg);
+    }
+    .steps__content::before {
+        display: none !important;
+    }
+    .steps__item:last-child .steps__content::after {
+        display: none !important;
+    }
+    .steps {
+        padding-bottom: 10px;
+    }
+    .consultation--secondary .consultation__title {
+        max-width: 324px;
+        padding-left: 13px;
+    }
+    .consultation--secondary .consultation__main::before {
+        display: none;
+    }
+    .consultation--secondary {
+        padding-bottom: 50px;
+    }
 }
 
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    
+    .btn-main_filter,
     .show-mobile,
     .phone-mobile,
     .sandwich,
@@ -1242,6 +1828,7 @@
     .footer__title i {
         display: none !important;
     }
+    .sidebar-catalog,
     .footer__content {
         display: block !important;
     }
@@ -1277,12 +1864,17 @@
         box-shadow: none;
         color: #b51411;
     }
+    .item-subcategory:hover,
     .item-category:hover {
         border-radius: 0 32px 32px 32px;
         color: #fff;
     }
+    .item-subcategory:hover::before,
     .item-category:hover::before {
         transform: scale(1.3);
+    }
+    .item-subcategory:hover .item-subcategory__count {
+        color: #fff;
     }
     .unit-category:hover {
         border-radius: 0 32px 32px 32px;
@@ -1313,6 +1905,29 @@
     .list-socials a:hover img {
         filter: none;
     }
+    .item-sertificat:hover {
+        box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    .sorting-catalog__value:hover {
+        border-color: #3d3d3d;
+    }
+    .item-sidebar__list li a:hover {
+        color: #b51411;
+    }
+    .item-news:hover .item-news__title {
+        color: #b51411;
+    }
+    .item-news:hover .item-news__image img {
+        transform: scale(1.05);
+    }
+    .prev.page-numbers:hover,
+    .next.page-numbers:hover {
+        color: #b51411;
+        box-shadow: 0 3px 4px 0 rgba(215, 181, 109, 0.5);
+    }
+    .btn-main.btn-main--secondary:hover {
+        background: #0a0908;
+    }
 }
 
 /*mobile hovers*/
@@ -1334,12 +1949,17 @@
         box-shadow: none;
         color: #b51411;
     }
+    .item-subcategory:active,
     .item-category:active {
         border-radius: 0 32px 32px 32px;
         color: #fff;
     }
+    .item-subcategory:active::before,
     .item-category:active::before {
         transform: scale(1.3);
+    }
+    .item-subcategory:active .item-subcategory__count {
+        color: #fff;
     }
     .unit-category:active {
         border-radius: 0 32px 32px 32px;
@@ -1369,5 +1989,28 @@
     }
     .list-socials a:active img {
         filter: none;
+    }
+    .item-sertificat:active {
+        box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    .sorting-catalog__value:active {
+        border-color: #3d3d3d;
+    }
+    .item-sidebar__list li a:active {
+        color: #b51411;
+    }
+    .item-news:active .item-news__title {
+        color: #b51411;
+    }
+    .item-news:active .item-news__image img {
+        transform: scale(1.05);
+    }
+    .prev.page-numbers:active,
+    .next.page-numbers:active {
+        color: #b51411;
+        box-shadow: 0 3px 4px 0 rgba(215, 181, 109, 0.5);
+    }
+    .btn-main.btn-main--secondary:active {
+        background: #0a0908;
     }
 }

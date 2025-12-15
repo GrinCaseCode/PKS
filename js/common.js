@@ -53,6 +53,70 @@ $(document).ready(function () {
 		$menu.removeClass("fixed").addClass("default");
 	}
 
+	 /*range slider*/
+
+	$('.input-range').each(function () {
+		var $range = $(this).find(".range-controls__slider"),
+		$from_input = $(this).find(".input-range__from"),
+		$to_input = $(this).find(".input-range__to"),
+		from = +$range.attr("from"),
+		to = +$range.attr("to"),
+		min = +$range.attr("min"),
+		max = +$range.attr("max");
+
+		function formatNumber(num) {
+			return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+		}
+
+		function cleanNumber(str) {
+			return str.replace(/\s+/g, '');
+		}
+
+		$range.ionRangeSlider({
+			type: "double",
+			min: min,
+			max: max,
+			from: from,
+			to: to,
+			prettify_enabled: true,
+			onChange: function () {
+				updateValues();
+			}
+		});
+
+		$range = $range.data("ionRangeSlider");
+
+		var updateValues = function () {
+			var res = $range.result;
+			$from_input.val(formatNumber(res.from));
+			$to_input.val(formatNumber(res.to));
+		};
+
+		$from_input
+			.on("focus", function () {
+				this.value = cleanNumber(this.value);
+				this.selectionStart = this.value.length;
+			})
+			.on("input", function () {
+				var val = cleanNumber(this.value);
+				$range.update({ from: val });
+			})
+			.on("blur", updateValues);
+
+		$to_input
+			.on("focus", function () {
+				this.value = cleanNumber(this.value);
+				this.selectionStart = this.value.length;
+			})
+			.on("input", function () {
+				var val = cleanNumber(this.value);
+				$range.update({ to: val });
+			})
+			.on("blur", updateValues);
+
+		updateValues();
+	});
+
 
 
 	//кнопка sandwich
@@ -76,6 +140,28 @@ $(document).ready(function () {
 		$(".menu-overlay").fadeOut(200);
 		$("body").removeClass("no-scroll");
 	});
+
+	//show all chekboxes	
+$(".show-more-checkboxes").on("click", function () {
+	const $btn = $(this);
+	const $list = $btn.siblings(".list-checkboxes");
+	const $items = $list.find(".checkbox:nth-child(n+10)");
+
+	const defaultText = $btn.data("text") || $btn.html();
+
+	// сохраняем исходный текст один раз
+	$btn.data("text", defaultText);
+
+	if ($items.is(":hidden")) {
+		$btn.addClass("active");
+		$btn.html('Свернуть <i class="far fa-chevron-down"></i>');
+		$items.slideDown(200);
+	} else {
+		$btn.removeClass("active");
+		$btn.html(defaultText);
+		$items.slideUp(200);
+	}
+});
 
 	//footer
 	{
@@ -126,6 +212,12 @@ $(document).ready(function () {
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
 		responsive: [
 			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 5,
+				}
+			},
+			{
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 4,
@@ -140,6 +232,12 @@ $(document).ready(function () {
 				}
 			}
 		]
+	});
+
+		//sidebar catalog
+	$(".btn-main_filter").click(function (e) {
+		e.preventDefault();
+		$(".sidebar-catalog").slideToggle(200);
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");

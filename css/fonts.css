@@ -67,7 +67,7 @@
 		url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
 		url('../fonts/Inter-ExtraBold.woff') format('woff'),
 		url('../fonts/Inter-ExtraBold.ttf') format('truetype');
-	font-weight: 700;
+	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
