@@ -1998,6 +1998,7 @@
     }
     .advantages--secondary .advantages__item {
         font-size: 13px;
+        max-width: initial;
         flex-grow: initial;
     }
     .advantages--secondary .advantages__grid {
