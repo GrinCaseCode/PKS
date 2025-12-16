@@ -1990,6 +1990,7 @@
         width: 100%;
     }
     .billbord-page.billbord-page--legal {
+        padding: 35px 0;
         background-position: center right -450px;
         background-image: none;
     }
