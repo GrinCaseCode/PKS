@@ -2023,6 +2023,7 @@
         display: block;
     }
     .steps__content {
+        font-size: 14px;
         max-width: 100%;
     }
     .steps__item {
