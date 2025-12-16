@@ -195,6 +195,7 @@
         font-size: 29px;
         margin-left: 60px;
     }
+    .item-form select,
     .item-form input {
         height: 46px;
         font-size: 13px;
@@ -424,7 +425,121 @@
     .steps__title {
         font-size: 16px;
     }
+    .billbord-page--delivery .billbord-page__title {
+        max-width: 595px;
+    }
+    .billbord-page--delivery .billbord-page__descr {
+        max-width: 425px;
+        margin-left: 380px;
+    }
+    .billbord-page.billbord-page--delivery {
+        padding-top: 45px;
+        padding-bottom: 38px;
+    }
+    .item-variant__head {
+        font-size: 27px;
+        padding: 6px 14px;
+    }
+    .calculator .btn-main,
+    .calculator .item-form select,
+    .calculator .item-form input {
+        height: 50px;
+    }
+    .calculator__price {
+        font-size: 32px;
+    }
+    .calculator {
+        padding-bottom: 55px;
+    }
+    .item-payment {
+        padding: 16px;
+        font-size: 16px;
+        gap: 16px;
+    }
+    .item-payment__icon {
+        width: 58px;
+        height: 58px;
+    }
+    .item-payment__icon img {
+        width: 32px;
+    }
+    .item-payment__title {
+        font-size: 17px;
+    }
+    .insurance__item {
+        font-size: 18px;
+        padding: 28px;
+        max-width: 365px;
+    }
+    .insurance__wrapper {
+        gap: 27px;
+    }
+    .insurance__item:nth-child(2) {
+        max-width: 469px;
+    }
+    .item-variant__title {
+        font-size: 18px;
+    }
+    .item-variant__content {
+        padding: 21px 32px;
+        font-size: 16px;
+    }
+    .unit-contacts {
+        padding: 17px 30px;
+        font-size: 16px;
+    }
+    .unit-contacts__value {
+        font-size: 18px;
+    }
+    #map {
+        height: 410px;
+    }
+    .billbord-page--sales .billbord-page__title {
+        max-width: 620px;
+    }
+    .billbord-page--sales .billbord-page__descr {
+        max-width: 350px;
+    }
+    .item-news__value {
+        padding: 10px;
+        font-size: 27px;
+    }
+    .item-news__logo {
+        width: 97px;
+        height: 60px;
+    }
+    .item-news__text {
+        margin-bottom: 17px;
+        font-size: 16px;
+    }
+    .item-news .btn-main {
+        height: 38px;
+        font-size: 13px;
+    }
+    .page-sales .item-news {
+        padding-bottom: 20px;
+    }
+    .terms h3 {
+        font-size: 18px;
+        margin-top: 17px;
+        margin-bottom: 13px;
+    }
+    .consultation--sales .consultation__form {
+        max-width: 600px;
+    }
+    .consultation--sales .consultation__main {
+        padding-left: 75px;
+    }
+    .consultation__name {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .consultation__text {
+        font-size: 18px;
+        max-width: 398px;
+    }
 }
+
 @media only screen and (max-width : 1450px) {
     body {
         font-size: 12px;
@@ -621,6 +736,7 @@
         font-size: 25px;
         margin-left: 52px;
     }
+    .item-form select,
     .item-form input {
         height: 40px;
         font-size: 11px;
@@ -834,6 +950,90 @@
     .advantages__title {
         font-size: 16px;
     }
+    .item-variant__head {
+        font-size: 24px;
+    }
+    .billbord-page--delivery .billbord-page__title {
+        max-width: 538px;
+    }
+    .billbord-page--delivery .billbord-page__descr {
+        max-width: 376px;
+        margin-left: 352px;
+    }
+    .item-variant__head {
+        font-size: 21px;
+    }
+    .item-variant__content {
+        padding: 19px 28px;
+        font-size: 14px;
+    }
+    .item-variant__title {
+        font-size: 16px;
+    }
+    .item-payment__icon {
+        width: 50px;
+        height: 50px;
+    }
+    .item-payment__icon img {
+        width: 27px;
+    }
+    .item-payment {
+        padding: 15px;
+        font-size: 14px;
+        gap: 12px;
+    }
+    .item-payment__title {
+        font-size: 15px;
+    }
+    .consultation--page .consultation__title {
+        max-width: 471px;
+    }
+    .calculator__total {
+        padding-left: 0;
+    }
+    .unit-contacts {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+    .unit-contacts__value {
+        font-size: 15px;
+    }
+    #map {
+        height: 370px;
+    }
+    .billbord-page--sales .billbord-page__title {
+        max-width: 544px;
+    }
+    .billbord-page--sales .billbord-page__descr {
+        max-width: 315px;
+    }
+    .billbord-page.billbord-page--sales {
+        padding-top: 44px;
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+    }
+    .item-news__value {
+        font-size: 23px;
+    }
+    .terms h3 {
+        font-size: 17px;
+    }
+    .consultation__form .btn-main {
+        height: 40px;
+    }
+    .consultation--sales .consultation__main {
+        padding-left: 40px;
+    }
+    .consultation__name {
+        font-size: 24px;
+    }
+    .consultation__text {
+        font-size: 15px;
+        max-width: 322px;
+    }
+    .consultation--sales {
+        padding-bottom: 50px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -1031,6 +1231,7 @@
         font-size: 20px;
         margin-left: 41px;
     }
+    .item-form select,
     .item-form input {
         height: 31px;
         font-size: 9px;
@@ -1195,10 +1396,48 @@
     .consultation--secondary .consultation__main::before {
         left: 210px;
     }
+    .calculator .btn-main, .calculator .item-form select, .calculator .item-form input {
+        height: 40px;
+    }
+    .calculator__price {
+        font-size: 27px;
+    }
+    .item-payment__title {
+        font-size: 13px;
+    }
+    .item-payment {
+        padding: 12px;
+        font-size: 12px;
+        gap: 9px;
+    }
+    .insurance__item {
+        font-size: 15px;
+        padding: 23px;
+        max-width: 294px;
+    }
+    .insurance__item:nth-child(2) {
+        max-width: 385px;
+    }
+    .consultation--page .consultation__title {
+        max-width: 395px;
+    }
+    .unit-contacts {
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+    .unit-contacts__value {
+        font-size: 12px;
+    }
+    .consultation__form .btn-main {
+        height: 32px;
+    }
+    .consultation--sales .consultation__form {
+        max-width: 390px;
+    }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991.88px) {
     .header__top,
     .header__middle .search-main,
     .header__middle .header__buttons,
@@ -1335,6 +1574,7 @@
         background: #d7b56d;
         display: block;
     }
+    .item-form select,
     .item-form input {
         height: 44px;
         font-size: 14px;
@@ -1815,6 +2055,124 @@
     .consultation--secondary {
         padding-bottom: 50px;
     }
+    .billbord-page--delivery .billbord-page__title {
+        max-width: 306px;
+    }
+    .billbord-page--delivery .billbord-page__descr {
+        max-width: 302px;
+        margin-left: 20px;
+        margin-bottom: 28px;
+    }
+    .item-variant__content {
+        padding: 17px 20px;
+    }
+    .item-variant {
+        margin-bottom: 18px;
+    }
+    .calculator .btn-main, .calculator .item-form select, .calculator .item-form input {
+        height: 48px;
+    }
+    .calculator .item-form {
+        margin-bottom: 18px;
+    }
+    .calculator__total {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .item-payment {
+        padding: 15px;
+        font-size: 15px;
+        gap: 15px;
+    }
+    .item-payment__title {
+        font-size: 16px;
+    }
+    .insurance__wrapper {
+        display: block;
+    }
+    .insurance__item {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .insurance__item:nth-child(2) {
+        max-width: 100%;
+    }
+    .insurance__item:last-child {
+        margin-bottom: 0;
+    }
+    .insurance {
+        padding-bottom: 30px;
+    }
+    .row.row--contacts>div {
+        margin-bottom: 20px;
+    }
+    .unit-contacts {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    .unit-contacts__value {
+        font-size: 16px;
+    }
+    #map {
+        margin-top: 25px;
+    }
+    .page-contacts--main .unit-contacts {
+        margin-bottom: 20px;
+    }
+    .unit-contacts .row>div {
+        margin-bottom: 15px;
+    }
+    .unit-contacts .row {
+        margin-bottom: -15px;
+    }
+    .billbord-page--sales .billbord-page__descr {
+        max-width: 212px;
+    }
+    .billbord-page--sales .billbord-page__title {
+        max-width: 330px;
+    }
+    .billbord-page.billbord-page--sales {
+        padding-top: 30px;
+        margin-bottom: 40px;
+        background-position: center right -160px;
+        position: relative;
+        z-index: 1;
+    }
+    .billbord-page.billbord-page--sales::before {
+        position: absolute;
+        display: block;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .consultation--sales .consultation__main {
+        padding: 30px 20px;
+    }
+    .consultation--sales .item-form {
+        margin-bottom: 13px;
+    }
+    .consultation__form .btn-main {
+        height: 46px;
+    }
+    .consultation__name {
+        font-size: 22px;
+    }
+    .consultation__text {
+        margin-bottom: 25px;
+        max-width: 295px;
+    }
+    .consultation--secondary .consultation__form,
+    .consultation--sales .consultation__form {
+        max-width: 100%;
+    }
+    .consultation--sales {
+        padding-top: 20px;
+    }
 }
 
 
@@ -1899,6 +2257,7 @@
     .menu__list a:hover {
         color: #b51411;
     }
+    .page-contacts .list-socials a:hover,
     .list-socials a:hover {
         border-color: #ce201d;
     }
@@ -1984,6 +2343,7 @@
     .menu__list a:active {
         color: #b51411;
     }
+    .page-contacts .list-socials a:active,
     .list-socials a:active {
         border-color: #ce201d;
     }

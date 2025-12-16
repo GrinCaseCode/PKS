@@ -742,6 +742,7 @@ form {
 .item-form {
 	margin-bottom: 12px;
 }
+.item-form select,
 .item-form input {
 	height: 50px;
 	font-size: 14px;
@@ -1428,7 +1429,10 @@ form {
 	padding-top: 0;
 }
 .item-news {
-	display: block;
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	align-items: flex-start;
 }
 .item-news__image {
 	padding-top: 56%;
@@ -1451,7 +1455,11 @@ form {
 .item-news__content {
 	padding: 20px;
 	padding-bottom: 0;
-	display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	flex: 1;
 }
 .item-news__date {
 	font-size: 14px;
@@ -1469,7 +1477,7 @@ form {
 	transition: all 0.3s;
 	display: block;
 }
-.row > div {
+.row>div {
 	padding: 0 12px;
 }
 .row {
@@ -1485,14 +1493,14 @@ form {
 	font-size: 20px;
 	margin-top: 47px;
 	margin-bottom: 15px;
-line-height: 160%;
-color: #0a0908;
-font-weight: 500;
+	line-height: 160%;
+	color: #0a0908;
+	font-weight: 500;
 }
 .article-content small {
 	font-size: 14px;
-line-height: 140%;
-color: #3d3d3d;
+	line-height: 140%;
+	color: #3d3d3d;
 }
 .text-info {
 	padding: 36px 32px;
@@ -1533,7 +1541,7 @@ color: #3d3d3d;
 }
 .billbord-page--legal .billbord-page__title strong {
 	font-weight: 800;
-text-transform: uppercase;
+	text-transform: uppercase;
 }
 .billbord-page__content {
 	padding: 28px 42px;
@@ -1549,9 +1557,9 @@ text-transform: uppercase;
 .billbord-page__content ul {
 	font-size: 22px;
 	padding-left: 30px;
-line-height: 130%;
-text-transform: uppercase;
-font-weight: 600;
+	line-height: 130%;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 .billbord-page__content ul li {
 	list-style-type: disc;
@@ -1572,7 +1580,7 @@ font-weight: 600;
 	flex-grow: 1;
 	display: block;
 	color: #0a0908;
-} 
+}
 .advantages__title {
 	font-size: 20px;
 	font-weight: 600;
@@ -1603,7 +1611,7 @@ font-weight: 600;
 	background: #f9f4ea;
 }
 .categories-main .grid-categories {
-	    grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 }
 .categories-main .item-category {
 	text-transform: none;
@@ -1622,18 +1630,18 @@ font-weight: 600;
 }
 .steps__count {
 	width: 71px;
-height: 61px;
-font-size: 32px;
+	height: 61px;
+	font-size: 32px;
 	border-radius: 10px 10px 0 10px;
 	background: #b51411;
 	line-height: 140%;
-text-transform: uppercase;
-color: #fff;
-font-weight: 800;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 .steps__content {
 	font-size: 18px;
@@ -1647,9 +1655,9 @@ text-align: center;
 }
 .steps__title {
 	font-size: 20px;
-line-height: 160%;
-text-transform: uppercase;
-font-weight: 600;
+	line-height: 160%;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 .steps__item:nth-child(2) {
 	margin: 0 auto;
@@ -1668,7 +1676,7 @@ font-weight: 600;
 	bottom: 0;
 	margin: auto;
 	left: 100%;
-		margin-left: 76px;
+	margin-left: 76px;
 	background-image: url(../img/arrow_right.svg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1712,15 +1720,322 @@ font-weight: 600;
 	padding-top: 35px;
 }
 .consultation--secondary .consultation__title {
-    max-width: 590px;
-    padding-left: 51px;
+	max-width: 590px;
+	padding-left: 51px;
 }
 .consultation--secondary {
 	padding-bottom: 60px;
 }
-.consultation--secondary .consultation__form .row > div {
+.consultation--secondary .consultation__form .row>div {
 	padding: 0 6px;
 }
 .consultation--secondary .consultation__form .row {
 	margin: 0 -6px;
+}
+.billbord-page--delivery {
+	background-image: url(../img/billbord_delivery.png);
+}
+.billbord-page--delivery .billbord-page__title {
+	max-width: 690px;
+	text-transform: uppercase;
+}
+.billbord-page--delivery .billbord-page__descr {
+	max-width: 480px;
+	margin-left: 440px;
+}
+.billbord-page--delivery .billbord-page__content {
+	margin-top: -10px;
+	padding-top: 0;
+}
+.billbord-page.billbord-page--delivery {
+	padding-top: 64px;
+	padding-bottom: 54px;
+}
+.billbord-page--delivery+.head-section {
+	padding-top: 50px;
+}
+.item-variant__head {
+	font-size: 32px;
+	padding: 8px 16px;
+	margin-bottom: 6px;
+	background: #b51411;
+	border-radius: 10px 10px 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 800;
+	line-height: 140%;
+	color: #fff;
+}
+.item-variant__content {
+	padding: 24px 36px;
+	font-size: 18px;
+	border-radius: 8px;
+	background: #faf8f6;
+	font-weight: 400;
+	color: #0a0908;
+}
+.item-variant__title {
+	font-size: 20px;
+	line-height: 160%;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.calculator .item-form select,
+.calculator .item-form input {
+	height: 54px;
+	border: 1px solid #d9d9d9;
+	font-weight: 500;
+	color: #3d3d3d;
+}
+.item-form select {
+	cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url(../img/select.svg);
+	background-repeat: no-repeat;
+	background-position: right 15px center;
+	background-size: 24px;
+}
+.calculator .btn-main {
+	height: 54px;
+	width: 100%;
+}
+.calculator__total {
+	padding-left: 40px;
+	font-weight: 500;
+}
+.calculator__price {
+	font-size: 36px;
+	line-height: 140%;
+	color: #b51411;
+	font-weight: 600;
+}
+.calculator .item-form {
+	margin: 0;
+}
+.calculator {
+	padding-bottom: 70px;
+}
+.payment {
+	padding-bottom: 42px;
+	background: #f9f4eb;
+}
+.item-payment {
+	padding: 21px;
+	font-size: 18px;
+	gap: 22px;
+	border-radius: 8px;
+	line-height: 160%;
+	font-weight: 400;
+	min-height: 100%;
+	display: flex;
+	align-self: flex-start;
+	background: #fff;
+}
+.item-payment__title {
+	font-size: 20px;
+	line-height: 160%;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.item-payment__icon {
+	width: 64px;
+	height: 64px;
+	border-radius: 8px 0 8px 8px;
+	background: #b51411;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+}
+.item-payment__icon img {
+	width: 36px;
+	height: auto;
+}
+.row.row--payment>div {
+	padding: 0 5px;
+	margin-bottom: 10px;
+}
+.row.row--payment {
+	margin: 0 -5px;
+	margin-bottom: -10px;
+}
+.insurance__wrapper {
+	gap: 42px;
+	display: flex;
+}
+.insurance__item {
+	font-size: 20px;
+	padding: 36px;
+	max-width: 396px;
+	border-radius: 8px;
+	line-height: 160%;
+	text-transform: uppercase;
+	font-weight: 600;
+	background: #faf8f6;
+}
+.insurance__item:nth-child(2) {
+	max-width: 530px;
+}
+.payment+.numbers.numbers--conditions {
+	padding-bottom: 10px;
+}
+.page-contacts {
+	padding-bottom: 20px;
+}
+.page-contacts .head-section {
+	padding-top: 0;
+}
+.unit-contacts {
+	padding: 20px 36px;
+	font-size: 18px;
+	line-height: 160%;
+	border-radius: 8px;
+	min-height: 100%;
+	font-weight: 400;
+	background: #faf8f6;
+}
+.unit-contacts p {
+	margin: 0;
+}
+.unit-contacts a {
+	color: #0a0908;
+}
+.unit-contacts__value {
+	font-size: 20px;
+	font-weight: 600;
+	display: inline-block;
+	vertical-align: middle;
+}
+#map {
+	height: 458px;
+	background: #faf8f6;
+	width: 100%;
+}
+.row.row--contacts>div {
+	margin-bottom: 30px;
+}
+.page-contacts--main .unit-contacts {
+	margin-bottom: 24px;
+	min-height: initial;
+}
+.page-contacts .list-socials img {
+	filter: brightness(0%);
+}
+.page-contacts .list-socials a {
+	border-color: #3D3D3D;
+}
+.billbord-page--sales {
+	background-image: url(../img/billbord_sales.png);
+}
+.page-sales .head-section {
+	padding-top: 0;
+}
+.billbord-page--sales .billbord-page__title {
+	max-width: 685px;
+	text-transform: uppercase;
+}
+.billbord-page--sales .billbord-page__descr {
+	max-width: 385px;
+}
+.billbord-page.billbord-page--sales {
+	padding-top: 64px;
+	padding-bottom: 30px;
+	margin-bottom: 62px;
+}
+.item-news__value {
+	padding: 12px;
+	font-size: 32px;
+	border-radius: 10px 10px 0 10px;
+	top: 0;
+	left: 0;
+	background: #b51411;
+	position: absolute;
+	line-height: 140%;
+	color: #fff;
+	font-weight: 600;
+}
+.item-news__logo {
+	width: 106px;
+	height: 68px;
+	padding: 5px;
+	bottom: 10px;
+	right: 10px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+}
+.item-news__logo img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: initial;
+	width: auto;
+	height: auto;
+	position: relative;
+}
+.item-news__text {
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 160%;
+	color: #0a0908;
+	font-weight: 400;
+	color: inherit;
+	display: block;
+}
+.item-news .btn-main {
+	height: 40px;
+	font-size: 14px;
+	margin-top: auto;
+}
+.page-sales .item-news {
+	padding-bottom: 24px;
+	border-bottom: 1px solid #d9d9d9;
+}
+.terms h3 {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 14px;
+	line-height: 160%;
+	font-weight: 500;
+}
+.terms .head-section+h3 {
+	margin-top: 0;
+}
+.terms p {
+	margin: 14px 0;
+}
+.consultation--sales .consultation__main {
+	padding-left: 108px;
+	background: #d7b56d;
+}
+.consultation--sales .consultation__form {
+	max-width: 655px;
+	padding: 0;
+}
+.consultation--sales {
+	padding-bottom: 60px;
+}
+.consultation__name {
+	font-size: 36px;
+	margin-bottom: 12px;
+	line-height: 140%;
+	text-transform: uppercase;
+	color: #3d3d3d;
+	font-weight: 800;
+}
+.consultation__text {
+	font-size: 22px;
+	max-width: 425px;
+	line-height: 130%;
+	color: #3d3d3d;
+	font-weight: 600;
+}
+.consultation--sales .consultation__form .btn-main {
+	margin-top: 0;
+}
+.consultation--sales .item-form {
+	margin-bottom: 0;
 }
