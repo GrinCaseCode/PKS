@@ -53,16 +53,16 @@ $(document).ready(function () {
 		$menu.removeClass("fixed").addClass("default");
 	}
 
-	 /*range slider*/
+	/*range slider*/
 
 	$('.input-range').each(function () {
 		var $range = $(this).find(".range-controls__slider"),
-		$from_input = $(this).find(".input-range__from"),
-		$to_input = $(this).find(".input-range__to"),
-		from = +$range.attr("from"),
-		to = +$range.attr("to"),
-		min = +$range.attr("min"),
-		max = +$range.attr("max");
+			$from_input = $(this).find(".input-range__from"),
+			$to_input = $(this).find(".input-range__to"),
+			from = +$range.attr("from"),
+			to = +$range.attr("to"),
+			min = +$range.attr("min"),
+			max = +$range.attr("max");
 
 		function formatNumber(num) {
 			return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
@@ -142,26 +142,26 @@ $(document).ready(function () {
 	});
 
 	//show all chekboxes	
-$(".show-more-checkboxes").on("click", function () {
-	const $btn = $(this);
-	const $list = $btn.siblings(".list-checkboxes");
-	const $items = $list.find(".checkbox:nth-child(n+10)");
+	$(".show-more-checkboxes").on("click", function () {
+		const $btn = $(this);
+		const $list = $btn.siblings(".list-checkboxes");
+		const $items = $list.find(".checkbox:nth-child(n+10)");
 
-	const defaultText = $btn.data("text") || $btn.html();
+		const defaultText = $btn.data("text") || $btn.html();
 
-	// сохраняем исходный текст один раз
-	$btn.data("text", defaultText);
+		// сохраняем исходный текст один раз
+		$btn.data("text", defaultText);
 
-	if ($items.is(":hidden")) {
-		$btn.addClass("active");
-		$btn.html('Свернуть <i class="far fa-chevron-down"></i>');
-		$items.slideDown(200);
-	} else {
-		$btn.removeClass("active");
-		$btn.html(defaultText);
-		$items.slideUp(200);
-	}
-});
+		if ($items.is(":hidden")) {
+			$btn.addClass("active");
+			$btn.html('Свернуть <i class="far fa-chevron-down"></i>');
+			$items.slideDown(200);
+		} else {
+			$btn.removeClass("active");
+			$btn.html(defaultText);
+			$items.slideUp(200);
+		}
+	});
 
 	//footer
 	{
@@ -234,7 +234,70 @@ $(".show-more-checkboxes").on("click", function () {
 		]
 	});
 
-		//sidebar catalog
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		vertical: true,
+		verticalSwiping: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					vertical: false,
+					verticalSwiping: false,
+				}
+			}
+		]
+	});
+
+	$('.colors-card').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		variableWidth: true,
+		slidesToShow: 10,
+		slidesToScroll: 1,
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+	});
+
+		//tabs
+	$('.tabs li a').click(function (event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	});
+
+	//btn favorites
+	$(".add-favorite").click(function () {
+		$(this).toggleClass("active");
+	});
+
+	//sidebar catalog
 	$(".btn-main_filter").click(function (e) {
 		e.preventDefault();
 		$(".sidebar-catalog").slideToggle(200);
