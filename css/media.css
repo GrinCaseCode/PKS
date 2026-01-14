@@ -2418,6 +2418,7 @@
         flex-wrap: wrap;
         gap: 15px 0;
         justify-content: center;
+        align-items: initial;
     }
     .tabs li {
         width: 50%;
@@ -2425,6 +2426,11 @@
     .tabs a {
         padding: 10px 5px;
         padding-top: 0;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     .tab-container .tab-pane>p {
         margin-bottom: 15px;
@@ -2591,6 +2597,10 @@
     .types-card a:hover {
         border-color: #0a0908;
     }
+    .btn-relative:hover,
+    .btn-default:hover {
+        color: #B51411;
+    }
 }
 
 /*mobile hovers*/
@@ -2686,5 +2696,9 @@
     }
     .types-card a:active {
         border-color: #0a0908;
+    }
+    .btn-relative:active,
+    .btn-default:active {
+        color: #B51411;
     }
 }
